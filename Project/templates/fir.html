@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    <center>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <form action="\app\add" method="get">
+            <div class="container">
+                <button type="submit" style="font-size : 25px; height: 63px; width: 230px" class="btn btn-warning">Click to Add new Person</button>
+        </form>
+
+
+        <form action="\app\viewlive">
+                <br/><br/><br/>
+                <button type="submit" style="font-size : 25px; height: 63px; width: 230px" class="btn btn-warning">Click To View Live Feed</button>
+            </div>
+         </form>
+
+        <form action="\app\train">
+                <br/><br/><br/>
+                <button type="submit" style="font-size : 25px; height: 63px; width: 230px" class="btn btn-warning">Click To Train Your Model</button>
+            </div>
+         </form>
+
+        {{ train }}
+        {{ info }}
+
+    </center>
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>
